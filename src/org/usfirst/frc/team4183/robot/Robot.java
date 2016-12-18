@@ -29,7 +29,6 @@ public class Robot extends IterativeRobot {
     public static final DriveSubsystem driveSubsystem;
 	public static final OI oi;
 	
-	
 	static {
 
 		try {
