@@ -200,7 +200,7 @@ public class DriveSubsystem extends Subsystem {
 			// And don't let the doc & comments fool you, setInverted DOES have an
 			// effect in modes other than Percent VBus
 			m.setInverted(false);
-			// Get this out of the way also (zero disables)
+			// Get this out of the way also (value of zero disables ramp)
 			m.setVoltageRampRate(0.0);
 		}
 
