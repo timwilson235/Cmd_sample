@@ -42,7 +42,7 @@ public class Robot extends IterativeRobot {
 		}
 	}
 
-    private SendableChooser chooser;
+    private SendableChooser<Command> chooser;
 	
     /**
      * This function is run when the robot is first started up and should be
@@ -55,7 +55,7 @@ public class Robot extends IterativeRobot {
    
     	System.out.println("robotInit()");
     	    	
-    	chooser = new SendableChooser();   	
+    	chooser = new SendableChooser<Command>();   	
         chooser.addDefault( "Curve Right", new CurveRightCommand(5.0));
         chooser.addObject( "Curve Left", new CurveLeftCommand(5.0));
         chooser.addObject( "Waggle", new WaggleCommand());

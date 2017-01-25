@@ -3,7 +3,7 @@ package org.usfirst.frc.team4183.robot.subsystems;
 
 import org.usfirst.frc.team4183.robot.RobotMap;
 
-import edu.wpi.first.wpilibj.CANTalon;
+import com.ctre.CANTalon;
 import edu.wpi.first.wpilibj.RobotDrive;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -157,7 +157,7 @@ public class DriveSubsystem extends Subsystem {
 		m.setPID(0.05, 0.0, 0.0); // P, I, D
 		m.setF(0.0);
 		m.setIZone(0);
-		m.setCloseLoopRampRate(50.0);  // Smoothes things a bit
+		m.setCloseLoopRampRate(50.0);  // Smooths things a bit
 		m.setAllowableClosedLoopErr(100);
 		m.configNominalOutputVoltage(1.0, -1.0);  
 		m.configPeakOutputVoltage(+12.0, -12.0);
